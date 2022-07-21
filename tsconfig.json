@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,6 +19,28 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".prettierrc.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".prettierrc.ts",
+    "jest.setup.js",
+    "tests/test-utils.ts",
+    "tests/pages/index.test.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "baseUrl": ".",
+  "paths": {
+    "@components/*": [
+      "components/*"
+    ],
+    "@pages/*": [
+      "pages/*"
+    ],
+    "@hooks/*": [
+      "hooks/*"
+    ]
+  }
 }
