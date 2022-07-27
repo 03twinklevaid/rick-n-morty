@@ -13,6 +13,14 @@ interface IResult {
   status: string
   species: string
   image: string
+  gender: string  
+   created:  string
+   origin: {
+    name: string
+   }
+   location: {
+    name: string
+   }
 }
 
 interface ICharacter {
